@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* aparelho em pé (portrait ) */
+
+body {
+   background: url(../mq002/imagem/cev-portrait.jpg);
+   background-position: center bottom;
+}
