@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    i#imenu {
+        display: none;
+    }
+    menu {
+        display: block !important;
+    }
+    menu > ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    menu > ul > li > a {
+        border-top: none;
+        border-radius: 5px;
+    }
+
+    main { 
+        width: 768px;
+    }
+}

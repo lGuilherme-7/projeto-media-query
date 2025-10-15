@@ -21,9 +21,21 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
+i#imenu {
+    background-color: #212120;
+    display: block;
+    text-align: center;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+i#imenu:hover {
+    background-color:black;
+    color: white;
+}
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul { 
