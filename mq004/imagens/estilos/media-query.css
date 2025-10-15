@@ -1,5 +1,79 @@
 @charset "UTF-8";
-/* todas as verões  */
+/* todas as versões  */
+
+/* typical device breakpoints 
+pequennas telas até 600px  
+celular:  600px - 768px 
+tablet:  769px - 992px 
+desktop:  992px - 1200px
+grandes telas acima de 1200px
+
+
+*/
+/*impessão*/
 @media print {
+    *{
+         font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../back-print.jpg);
+        text-shadow: none;
+        color: black;
+    }
+    /* desnecessários o background pq não aparece na impressão */
+    img#iphone { display: none;}
+    img#itablet { display: none;}   
+    img#iprint { display: block;}
+    img#ipc { display: none;}
+    img#itv { display: none;}
     
+}
+
+main{
+    border: 2px solid black;
+}
+
+main h1{
+    color: black;
+    text-shadow: none;
+}
+
+main::after{
+    content: "site criado por guibb";
+    text-decoration: overline;
+}
+
+/* tablet */
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  body {
+    background-image: url(../back-tablet.jpg);
+  } 
+  
+    img#iphone { display: none;}
+    img#itablet { display: block;}
+    img#iprint { display: none;}
+    img#ipc { display: none;}
+    img#itv { display: none;}
+}
+/* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../back-pc.jpg);
+  }  
+    img#iphone { display: none;}
+    img#itablet { display: none;}
+    img#iprint { display: none;}
+    img#ipc { display: block;}
+    img#itv { display: none;}
+}
+/* grandes telas */
+@media screen and (min-width: 1200px)  {
+  body {
+    background-image: url(../back-tv.jpg);
+  }  
+    img#iphone { display: none;}
+    img#itablet { display: none;}
+    img#iprint { display: none;}
+    img#ipc { display: none;}
+    img#itv { display: block;}
 }
